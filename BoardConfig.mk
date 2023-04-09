@@ -109,5 +109,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
+# SELinux
+include device/mediatek/sepolicy/sepolicy.mk
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Inherit the proprietary files
 include vendor/samsung/a04e/BoardConfigVendor.mk
