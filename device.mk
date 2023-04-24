@@ -77,5 +77,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     FPSInfoOverlay
 
+# Symbols
+PRODUCT_PACKAGES += \
+    libshim_showlogo \
+    libshim_vtservice
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a04e/a04e-vendor.mk)
