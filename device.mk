@@ -86,5 +86,9 @@ PRODUCT_PACKAGES += \
     libshim_showlogo \
     libshim_vtservice
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay 
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a04e/a04e-vendor.mk)
