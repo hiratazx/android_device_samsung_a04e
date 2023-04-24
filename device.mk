@@ -88,7 +88,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay 
+    $(DEVICE_PATH)/overlay \
+    $(DEVICE_PATH)/overlay-lineage
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a04e/a04e-vendor.mk)
