@@ -77,6 +77,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     FPSInfoOverlay
 
+# Cutout
+PRODUCT_PACKAGES += \
+    NotchBarKiller
+
 # Symbols
 PRODUCT_PACKAGES += \
     libshim_showlogo \
