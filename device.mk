@@ -31,6 +31,38 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Product characteristics
 PRODUCT_CHARACTERISTICS := phone
 
+# IORap
+PRODUCT_PRODUCT_PROPERTIES += \
+     ro.iorapd.enable=true
+
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
+# KPOC
+PRODUCT_PACKAGES += \
+    libsuspend \
+    android.hardware.health@2.0
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
+
+# Properties
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0_system \
+    android.hidl.manager@1.0_system
+
+# Audio
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
+
+PRODUCT_PACKAGES += \
+    audio.a2dp.default
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.insmod.sh \
