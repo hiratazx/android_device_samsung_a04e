@@ -105,14 +105,6 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# SystemUI
-PRODUCT_PACKAGES += \
-    FPSInfoOverlay
-
-# Cutout
-PRODUCT_PACKAGES += \
-    NotchBarKiller
-
 # Symbols
 PRODUCT_PACKAGES += \
     libshim_showlogo \
