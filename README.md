@@ -1,4 +1,4 @@
-# Android device tree for samsung SM-A037F (a03s)
+# Android device tree for Galaxy A04e
 
 ```
 #

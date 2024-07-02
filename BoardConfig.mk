@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/samsung/a03s
+DEVICE_PATH := device/samsung/a04e
 
 # Architecture
 TARGET_ARCH := arm64
@@ -25,7 +25,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := a03s
+TARGET_BOOTLOADER_BOARD_NAME := a04e
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -44,8 +44,8 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := a03s_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/a03s
+TARGET_KERNEL_CONFIG := a04e_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/mt6765
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -102,4 +102,4 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
-include vendor/samsung/a03s/BoardConfigVendor.mk
+include vendor/samsung/a04e/BoardConfigVendor.mk

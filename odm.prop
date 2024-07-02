@@ -1,2 +1,2 @@
-persist.sys.usb.config=mtp
+persist.sys.usb.config=mtp,adb
 ro.vendor.qti.va_odm.support=0
